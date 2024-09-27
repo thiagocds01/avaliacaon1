@@ -9,7 +9,7 @@
 <body class="pagina_cadastro">
     <div class="container mt-5" id="pagina_cadastro">
         <h2 class="text-center mb-4">Cadastro de Novo Usuário</h2>
-        <form id="registerForm">
+        <form action="login.html" method="POST">
             <div class="form-group">
                 <label for="nome">Nome</label>
                 <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
@@ -40,15 +40,54 @@
             </div>
             <div class="form-group">
                 <label for="estado">Estado</label>
-                <input type="text" class="form-control" id="estado" placeholder="Digite o estado" required>
+                <select class="form-control" id="estado" required>
+                    <option value="">Selecione seu estado</option>
+                    <option value="AC">Acre (AC)</option>
+                    <option value="AL">Alagoas (AL)</option>
+                    <option value="AP">Amapá (AP)</option>
+                    <option value="AM">Amazonas (AM)</option>
+                    <option value="BA">Bahia (BA)</option>
+                    <option value="CE">Ceará (CE)</option>
+                    <option value="DF">Distrito Federal (DF)</option>
+                    <option value="ES">Espírito Santo (ES)</option>
+                    <option value="GO">Goiás (GO)</option>
+                    <option value="MA">Maranhão (MA)</option>
+                    <option value="MT">Mato Grosso (MT)</option>
+                    <option value="MS">Mato Grosso do Sul (MS)</option>
+                    <option value="MG">Minas Gerais (MG)</option>
+                    <option value="PA">Pará (PA)</option>
+                    <option value="PB">Paraíba (PB)</option>
+                    <option value="PR">Paraná (PR)</option>
+                    <option value="PE">Pernambuco (PE)</option>
+                    <option value="PI">Piauí (PI)</option>
+                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                    <option value="RN">Rio Grande do Norte (RN)</option>
+                    <option value="RS">Rio Grande do Sul (RS)</option>
+                    <option value="RO">Rondônia (RO)</option>
+                    <option value="RR">Roraima (RR)</option>
+                    <option value="SC">Santa Catarina (SC)</option>
+                    <option value="SP">São Paulo (SP)</option>
+                    <option value="SE">Sergipe (SE)</option>
+                    <option value="TO">Tocantins (TO)</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="cep">CEP</label>
                 <input type="text" class="form-control" id="cep" placeholder="Digite o CEP" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmarSenha">Confirmar Senha</label>
+                <input type="password" class="form-control" id="confirmarSenha" placeholder="Confirme sua senha" required>
             </div>
             <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
         </form>
         <div class="text-center mt-3">
             <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
         </div>
-    </div
+    </div>
+</body>
+</html>
