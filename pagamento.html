@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="pagina_pagamento">
+    <div class="container mt-5" id="pagina_pagamento">
+        <h2 class="text-center mb-4">Dados de Pagamento</h2>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="cardType">Bandeira do Cartão</label>
+                <select class="form-control" id="cardType" required>
+                    <option value="">Selecione a bandeira do cartão</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="American Express">American Express</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Número do Cartão</label>
+                <input type="text" class="form-control" id="cardNumber" placeholder="Digite o número do cartão" required>
+            </div>
+            <div class="form-group">
+                <label for="expiryDate">Data de Expiração</label>
+                <input type="month" class="form-control" id="expiryDate" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">Código de Segurança (CVV)</label>
+                <input type="text" class="form-control" id="cvv" placeholder="Digite o código de segurança" required>
+            </div>
+            <a href="confirmacao_pagamento.html"><button type="button" class="btn btn-primary btn-block" id="finalizeButton">Finalizar Compra</button></a>
+        </form>
+    </div>
+
+   </body>
+</html>
