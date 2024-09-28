@@ -1,0 +1,133 @@
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e4f1e2; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo da página de login e cadastro */
+.pagina_login, .pagina_cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+/* Container das páginas */
+.container {
+    background-color: rgb(206, 231, 195);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%; /* Adiciona responsividade */
+}
+
+.containerProdutos {
+    background-color: rgb(206, 231, 195);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1100px; /* Define a largura máxima do contêiner */
+    width: 100%; /* Adiciona responsividade */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+}
+
+/* Títulos (h2) */
+h2 {
+    color: #0d0e0d;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo para os campos de entrada */
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Estilo para os botões principais (login e cadastro) */
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para o texto abaixo do formulário */
+.text-center p {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Estilo para links */
+.text-center a {
+    color: #191b1d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Estilo para os labels dos campos */
+.form-group label {
+    font-weight: bold;
+    color: #191a19;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #e4f1e2;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Título da barra de navegação */
+.title {
+    color: rgb(107, 23, 72);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo da página de produtos */
+.pagina_produtos {
+    padding-top: 60px; /* Para evitar que o conteúdo fique atrás da barra de navegação */
+}
+
+/* Cartões de produtos */
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+    color: #0d0e0d;
+}
+
+.card-text {
+    color: #333;
+}
+
+/* Botão de finalizar compra */
+#finalizarCompra {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+
+#finalizarCompra:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
