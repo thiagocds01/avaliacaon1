@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 90vh;
+    margin-top: 100px;
 }
 
 /* Container das páginas */
@@ -81,12 +82,13 @@ nav {
     background-color: #e4f1e2;
     padding: 10px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Título da barra de navegação */
@@ -97,8 +99,9 @@ nav {
 }
 
 /* Estilo da página de produtos */
-.pagina_produtos {
-    padding-top: 60px; /* Para evitar que o conteúdo fique atrás da barra de navegação */
+#pagina_produtos {
+    margin-top: 100px; /* Para evitar que o conteúdo fique atrás da barra de navegação */
+    margin-bottom: 80px;
 }
 
 /* Cartões de produtos */
